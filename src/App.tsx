@@ -101,8 +101,8 @@ function App() {
       formDataToSend.append('college', formData.college);
       formDataToSend.append('file', formData.file?.name || 'No file uploaded');
 
-      // Replace this URL with your actual Google Apps Script Web App URL
-      const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbysxW-0ObtYWopelAKVf-eroUW_-p_83gCAuyYVdhKw3tLhMeyi-OClSv_ankhvfjKZ/exec';
+      // Replace this URL with your actual Google Apps Script Web App URLconst GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbysxW-0ObtYWopelAKVf-eroUW_-p_83gCAuyYVdhKw3tLhMeyi-OClSv_ankhvfjKZ/exec';
+
       
       // Submit to Google Sheets
       const response = await fetch(GOOGLE_SCRIPT_URL, {
